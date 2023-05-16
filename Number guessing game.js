@@ -8,12 +8,12 @@ while (!maximum) {
 const targetNum = Math.floor(Math.random() * maximum) + 1
 console.log(targetNum);
 
-let guess = parseInt(prompt("enter your first guess"));
+let guess = parseInt(prompt("Enter your first guess"));
 while (guess !== targetNum) {
     if (guess > targetNum) {
-        prompt("too high enter new guess")
+        guess = parseInt(prompt("Too high! Enter new guess"))
     } else {
-        guess = prompt("too low! enter a new guuess")
+        guess = parseInt(prompt("Too low! Enter a new guuess"))
     }
 }
 console.log("You got it")
